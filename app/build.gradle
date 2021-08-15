@@ -94,6 +94,7 @@ dependencies {
     def autoServiceVersion = "1.0"
 
     implementation project(':dexlib')
+    implementation project(':j2melib')
 
     // Android Jetpack
     implementation "androidx.room:room-runtime:$roomVersion"
@@ -116,7 +117,6 @@ dependencies {
 
     // Audio/Video/Graphics
     implementation 'com.github.billthefarmer:mididriver:v1.21'
-    implementation 'com.github.nikita36078:pngj:2.2.2'
     implementation 'com.github.nikita36078:mobile-ffmpeg:v4.3.2-compact'
 
     // Android UI

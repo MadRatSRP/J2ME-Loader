@@ -1,1 +1,3 @@
 include ':app', ':dexlib'
+include ':j2meclasses'
+include ':j2melib'
