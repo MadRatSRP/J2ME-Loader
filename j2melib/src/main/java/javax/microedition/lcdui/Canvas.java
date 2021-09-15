@@ -66,11 +66,12 @@ import javax.microedition.util.ContextHolder;
 
 import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;
-import ru.playsoftware.j2meloader.R;
 import ru.playsoftware.j2meloader.config.ShaderInfo;
 
 import static android.opengl.GLES20.*;
 import static android.opengl.GLSurfaceView.RENDERMODE_WHEN_DIRTY;
+
+import com.madrat.j2melib.R;
 
 @SuppressWarnings({"WeakerAccess", "unused"})
 public abstract class Canvas extends Displayable {

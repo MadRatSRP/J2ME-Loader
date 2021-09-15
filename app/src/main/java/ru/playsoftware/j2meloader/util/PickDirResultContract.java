@@ -27,6 +27,7 @@ import androidx.annotation.Nullable;
 
 import com.nononsenseapps.filepicker.FilePickerActivity;
 
+import ru.playsoftware.j2meloader.config.Config;
 import ru.playsoftware.j2meloader.filepicker.FilteredFilePickerActivity;
 
 public class PickDirResultContract extends ActivityResultContract<String, Uri> {

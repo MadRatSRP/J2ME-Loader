@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+        <item name="colorPrimary">@color/dark_color_primary</item>
+        <item name="colorPrimaryDark">@color/dark_color_primary_dark</item>
+        <item name="colorAccent">@color/dark_color_accent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="android:colorBackground">@color/dark_color_background</item>
+        <item name="android:windowBackground">@color/dark_color_background</item>
+        <item name="buttonStyle">@style/ButtonStyle</item>
+
+        <!--custom theme attrs-->
+        <item name="bg_config_card">@drawable/bg_config_card_dark</item>
+        <item name="textColorPrimary">@color/dark_color_text_primary</item>
+        <item name="textColorSecondary">@color/dark_color_text_secondary</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/light_color_primary</item>
+        <item name="colorPrimaryDark">@color/light_color_primary_dark</item>
+        <item name="colorAccent">@color/light_color_accent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="android:colorBackground">@color/light_color_background</item>
+        <item name="android:windowBackground">@color/light_color_background</item>
+        <item name="buttonStyle">@style/ButtonStyle.Light</item>
+
+        <!--custom theme attrs-->
+        <item name="bg_config_card">@drawable/bg_config_card_light</item>
+        <item name="textColorPrimary">@color/light_color_text_primary</item>
+        <item name="textColorSecondary">@color/light_color_text_secondary</item>
+    </style>
+
     <style name="AppTheme.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/dark_color_primary</item>
         <item name="colorPrimaryDark">@color/dark_color_primary_dark</item>
@@ -34,5 +64,20 @@
     <style name="AppTheme.OverflowMenu" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
         <item name="android:popupBackground">@color/dark_color_primary_dark</item>
         <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="ButtonStyle.Base" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:minHeight">38dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:elevation" tools:ignore="NewApi">1dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="ButtonStyle.Base">
+        <item name="android:background">@drawable/bg_button_dark</item>
+    </style>
+
+    <style name="ButtonStyle.Light" parent="ButtonStyle.Base">
+        <item name="android:background">@drawable/bg_button_light</item>
     </style>
 </resources>

@@ -26,6 +26,8 @@ import androidx.preference.PreferenceManager;
 
 import static ru.playsoftware.j2meloader.util.Constants.PREF_THEME;
 
+import com.madrat.j2melib.R;
+
 @SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity {
     

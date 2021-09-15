@@ -34,9 +34,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.preference.PreferenceManager;
-import ru.playsoftware.j2meloader.R;
 
 import static ru.playsoftware.j2meloader.util.Constants.*;
+
+import com.madrat.j2melib.R;
 
 public class SaveProfileAlert extends DialogFragment {
 

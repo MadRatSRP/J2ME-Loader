@@ -23,7 +23,10 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
-import ru.playsoftware.j2meloader.R;
+
+import com.madrat.j2melib.R;
+
+import ru.playsoftware.j2meloader.config.Config;
 
 @Entity(tableName = "apps", indices = {@Index(value = {"path"}, unique = true)})
 public class AppItem {

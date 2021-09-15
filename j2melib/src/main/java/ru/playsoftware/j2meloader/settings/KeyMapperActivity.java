@@ -36,6 +36,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 
+import com.madrat.j2melib.R;
+
 import ru.playsoftware.j2meloader.base.BaseActivity;
 import ru.playsoftware.j2meloader.config.ProfileModel;
 import ru.playsoftware.j2meloader.config.ProfilesManager;
