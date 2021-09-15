@@ -93,7 +93,6 @@ dependencies {
     def roomVersion = '2.3.0'
     def autoServiceVersion = "1.0"
 
-    implementation project(':dexlib')
     implementation project(':j2melib')
 
     // Android Jetpack
@@ -106,22 +105,16 @@ dependencies {
     implementation 'androidx.preference:preference:1.1.1'
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    // Networking && APIs
-    implementation 'com.android.volley:volley:1.2.0'
-    implementation 'com.google.code.gson:gson:2.8.7'
-    implementation 'com.github.nikita36078:donations:2.8'
-
     // Threads, Streams and Archives
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-    implementation 'net.lingala.zip4j:zip4j:2.9.0'
 
-    // Audio/Video/Graphics
-    implementation 'com.github.billthefarmer:mididriver:v1.21'
-    implementation 'com.github.nikita36078:mobile-ffmpeg:v4.3.2-compact'
+    // Networking && APIs
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.nikita36078:donations:2.8'
+    implementation 'com.google.code.gson:gson:2.8.8'
 
     // Android UI
     implementation 'com.github.nikita36078:filepicker:4.3.0'
-    implementation 'com.github.yukuku:ambilwarna:2.0.1'
 
     // Testing && CrashReports
     androidTestImplementation 'androidx.test:runner:1.4.0'
@@ -130,7 +123,6 @@ dependencies {
     implementation 'ch.acra:acra-dialog:5.8.4'
 
     // Other Libraries
-    implementation 'org.ow2.asm:asm:9.2'
     compileOnly "com.google.auto.service:auto-service-annotations:$autoServiceVersion"
     annotationProcessor "com.google.auto.service:auto-service:$autoServiceVersion"
 }

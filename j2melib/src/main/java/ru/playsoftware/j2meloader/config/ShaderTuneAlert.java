@@ -32,8 +32,8 @@ import java.text.DecimalFormat;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
-import ru.playsoftware.j2meloader.R;
-import ru.playsoftware.j2meloader.config.ShaderInfo.Setting;
+
+import com.madrat.j2melib.R;
 
 public class ShaderTuneAlert extends DialogFragment {
 
@@ -72,16 +72,16 @@ public class ShaderTuneAlert extends DialogFragment {
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		LayoutInflater inflater = LayoutInflater.from(getActivity());
-		View v = inflater.inflate(R.layout.dialog_shader_tune, null);
-		LinearLayout container = v.findViewById(R.id.container);
-		Setting[] settings = shader.settings;
+		View view = inflater.inflate(R.layout.dialog_shader_tune, null);
+		LinearLayout container = view.findViewById(R.id.container);
+		ShaderInfo.Setting[] settings = shader.settings;
 		DecimalFormat format = new DecimalFormat("#.######");
 		for (int i = 0; i < 4; i++) {
-			Setting setting = settings[i];
+			ShaderInfo.Setting setting = settings[i];
 			if (setting == null) continue;
-			View view = inflater.inflate(R.layout.dialog_shader_tune_item, container, false);
-			TextView tvName = view.findViewById(R.id.tvShaderSettingName);
-			SeekBar sbValue = view.findViewById(R.id.sbShaderSettingValue);
+			View shaderTuneItemView = inflater.inflate(R.layout.dialog_shader_tune_item, container, false);
+			TextView tvName = shaderTuneItemView.findViewById(R.id.tvShaderSettingName);
+			SeekBar sbValue = shaderTuneItemView.findViewById(R.id.sbShaderSettingValue);
 			seekBars[i] = sbValue;
 			float value = values != null ? values[i] : setting.def;
 			tvName.setText(getString(R.string.shader_setting, setting.name, format.format(value)));
@@ -106,19 +106,19 @@ public class ShaderTuneAlert extends DialogFragment {
 				public void onStopTrackingTouch(SeekBar seekBar) {
 				}
 			});
-			container.addView(view);
+			container.addView(shaderTuneItemView);
 		}
-		v.<Button>findViewById(R.id.btNegative).setOnClickListener(v1 -> dismiss());
-		v.<Button>findViewById(R.id.btPositive).setOnClickListener(v1 -> onClickOk());
-		v.<Button>findViewById(R.id.btNeutral).setOnClickListener(v1 -> onClickReset());
-		return new AlertDialog.Builder(requireActivity()).setTitle(R.string.shader_tuning).setView(v).create();
+		view.<Button>findViewById(R.id.btNegative).setOnClickListener(v1 -> dismiss());
+		view.<Button>findViewById(R.id.btPositive).setOnClickListener(v1 -> onClickOk());
+		view.<Button>findViewById(R.id.btNeutral).setOnClickListener(v1 -> onClickReset());
+		return new AlertDialog.Builder(requireActivity()).setTitle(R.string.shader_tuning).setView(view).create();
 	}
 
 	private void onClickReset() {
 		for (int i = 0; i < 4; i++) {
 			SeekBar seekBar = seekBars[i];
 			if (seekBar == null) continue;
-			Setting s = shader.settings[i];
+			ShaderInfo.Setting s = shader.settings[i];
 			int progress = (int) ((s.def - s.min) / s.step);
 			seekBar.setProgress(progress);
 		}
@@ -129,7 +129,7 @@ public class ShaderTuneAlert extends DialogFragment {
 		for (int i = 0, sbValuesLength = seekBars.length; i < sbValuesLength; i++) {
 			SeekBar bar = seekBars[i];
 			if (bar == null) continue;
-			Setting setting = shader.settings[i];
+			ShaderInfo.Setting setting = shader.settings[i];
 			values[i] = bar.getProgress() * setting.step + setting.min;
 		}
 		callback.onTuneComplete(values);

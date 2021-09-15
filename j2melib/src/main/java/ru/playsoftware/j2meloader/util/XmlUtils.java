@@ -134,7 +134,20 @@ public class XmlUtils {
 			writeValueXml(e.getValue(), (String) e.getKey(), out, callback);
 		}
 	}
-
+	
+	/**
+	 * Flatten a Map into an output stream as XML.  The map can later be
+	 * read back with readMapXml().
+	 *
+	 * @param val The map to be flattened.
+	 * @param out Where to write the XML data.
+	 * @see #writeMapXml(Map, String, XmlSerializer)
+	 * @see #writeListXml
+	 * @see #writeValueXml
+	 * @see #readMapXml
+	 */
+	
+	
 	/**
 	 * Flatten a List into an XmlSerializer.  The list can later be read back
 	 * with readThisListXml().

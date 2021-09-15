@@ -23,25 +23,24 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
-import ru.playsoftware.j2meloader.R;
 
 import static ru.playsoftware.j2meloader.util.Constants.PREF_THEME;
 
 @SuppressLint("Registered")
 public class BaseActivity extends AppCompatActivity {
-
-	@Override
-	protected void onCreate(@Nullable Bundle savedInstanceState) {
-		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-		String theme = preferences.getString(PREF_THEME, "light");
-		if (theme.equals("dark")) {
-			setTheme(R.style.AppTheme);
-		} else {
-			setTheme(R.style.AppTheme_Light);
-		}
-		if (getSupportActionBar() != null) {
-			getSupportActionBar().setElevation(getResources().getDisplayMetrics().density * 2);
-		}
-		super.onCreate(savedInstanceState);
-	}
+    
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String theme = preferences.getString(PREF_THEME, "light");
+        if (theme.equals("dark")) {
+            setTheme(R.style.AppTheme);
+        } else {
+            setTheme(R.style.AppTheme_Light);
+        }
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setElevation(getResources().getDisplayMetrics().density * 2);
+        }
+        super.onCreate(savedInstanceState);
+    }
 }

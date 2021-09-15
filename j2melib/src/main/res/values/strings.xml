@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error">Error</string>
+    <string name="shader_setting" translatable="false">%s: %s</string>
+    <string name="shader_tuning">Shader Tuning</string>
+    <string name="CONFIRMATION_REQUIRED">Confirmation required</string>
+    <string name="FORCE_CLOSE_CONFIRMATION">Force-closing the application may result in data loss or even break it completely!\nProceed?</string>
+    <string name="action_settings">Settings</string>
+    <string name="select_dialog_title">Select MIDlet</string>
+    <string name="layout_edit_mode">Keylayout edit mode</string>
+    <string name="layout_scale_mode">Keylayout resize mode</string>
+    <string name="layout_edit_finished">Edit mode finished</string>
+    <string name="screenshot_saved">Screenshot has been saved to</string>
+    <string name="log_saved">Log has been saved</string>
+    <string name="hide_buttons">Hide buttons</string>
+    <string name="PREF_LIMIT_FPS">Limit FPS</string>
+    <string name="reset">Reset</string>
+    <string name="pref_vk_save_alert">Custom keyboard will be replaced by current\nSave?</string>
+    <string name="layout_switch">Switch keylayout</string>
+    <string name="pref_vk_type_arrows">Arrows</string>
+    <string name="pref_vk_type_arrows_numbers">Arrows &amp; numbers</string>
+    <string name="pref_vk_type_custom">Custom</string>
+    <string name="pref_vk_type_numbers">Numbers</string>
+    <string name="pref_vk_type_numbers_arrows">Numbers &amp; arrows</string>
+    <string name="pref_vk_type_phone">Phone</string>
+    <string name="pref_vk_type_phone_arrows">Phone (arrows)</string>
+    <string name="unlimited">unlimited</string>
+</resources>

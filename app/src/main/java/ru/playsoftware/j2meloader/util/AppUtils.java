@@ -25,7 +25,6 @@ import java.util.List;
 
 import ru.playsoftware.j2meloader.applist.AppItem;
 import ru.playsoftware.j2meloader.appsdb.AppRepository;
-import ru.playsoftware.j2meloader.config.Config;
 
 public class AppUtils {
 

@@ -29,7 +29,6 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import ru.playsoftware.j2meloader.R;
-import ru.playsoftware.j2meloader.config.Config;
 import ru.playsoftware.j2meloader.config.ProfilesActivity;
 import ru.playsoftware.j2meloader.util.PickDirResultContract;
 

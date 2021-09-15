@@ -41,7 +41,6 @@ import java.util.Map;
 
 import ru.playsoftware.j2meloader.applist.AppsListFragment;
 import ru.playsoftware.j2meloader.base.BaseActivity;
-import ru.playsoftware.j2meloader.config.Config;
 import ru.playsoftware.j2meloader.util.MigrationUtils;
 import ru.playsoftware.j2meloader.util.PickDirResultContract;
 import ru.playsoftware.j2meloader.util.SettingsResultContract;
