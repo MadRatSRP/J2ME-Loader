@@ -27,10 +27,10 @@
 -keep class com.vodafone.** { *; }
 -keep class mmpp.media.** { *; }
 -keep class org.microemu.** { *; }
--keep class ru.playsoftware.j2meloader.util.SparseIntArrayAdapter { *; }
+-keep class ru.playsoftware.j2meloaderexperimentalmod.util.SparseIntArrayAdapter { *; }
 # Keep the BuildConfig
--keep class ru.playsoftware.j2meloader.BuildConfig { *; }
+-keep class ru.playsoftware.j2meloaderexperimentalmod.BuildConfig { *; }
 
 -keep class androidx.appcompat.widget.SearchView { *; }
 -keep class com.arthenica.mobileffmpeg.** { *; }
--keep class ru.playsoftware.j2meloader.crashes.AppCenterAPI** { *; }
+-keep class ru.playsoftware.j2meloaderexperimentalmod.crashes.AppCenterAPI** { *; }

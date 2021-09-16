@@ -14,9 +14,9 @@ System requirements: Android 4.0+
 [Discord](https://discord.gg/Ag4rcpz)  
 [Automated builds](https://install.appcenter.ms/users/nikita36078/apps/j2me-loader/distribution_groups/testers)
 
-<a href="https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloader">
+<a href="https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloaderexperimentalmod">
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="75"></a>
-<a href="https://f-droid.org/app/ru.playsoftware.j2meloader">
+<a href="https://f-droid.org/app/ru.playsoftware.j2meloaderexperimentalmod">
 <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="75"></a>
 
 ## Compatibility

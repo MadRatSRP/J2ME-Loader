@@ -31,8 +31,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import dalvik.system.DexClassLoader;
-import ru.playsoftware.j2meloader.config.Config;
-import ru.playsoftware.j2meloader.util.IOUtils;
+import ru.playsoftware.j2meloaderexperimentalmod.config.Config;
+import ru.playsoftware.j2meloaderexperimentalmod.util.IOUtils;
 
 public class AppClassLoader extends DexClassLoader {
 	private static final String TAG = AppClassLoader.class.getName();

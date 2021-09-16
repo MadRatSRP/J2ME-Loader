@@ -70,10 +70,10 @@ import javax.microedition.util.ContextHolder;
 
 import io.reactivex.SingleObserver;
 import io.reactivex.disposables.Disposable;
-import ru.playsoftware.j2meloader.config.Config;
-import ru.playsoftware.j2meloader.util.LogUtils;
+import ru.playsoftware.j2meloaderexperimentalmod.config.Config;
+import ru.playsoftware.j2meloaderexperimentalmod.util.LogUtils;
 
-import static ru.playsoftware.j2meloader.util.Constants.*;
+import static ru.playsoftware.j2meloaderexperimentalmod.util.Constants.*;
 
 import com.madrat.j2melib.R;
 

@@ -1,2 +1,3 @@
 include ':app', ':dexlib'
 include ':j2melib'
+rootProject.name = "J2MELoaderExperimentalMod"

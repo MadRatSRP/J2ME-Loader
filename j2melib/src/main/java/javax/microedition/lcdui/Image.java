@@ -28,7 +28,7 @@ import java.io.InputStream;
 import javax.microedition.lcdui.game.Sprite;
 import javax.microedition.shell.AppClassLoader;
 
-import ru.playsoftware.j2meloader.util.PNGUtils;
+import ru.playsoftware.j2meloaderexperimentalmod.util.PNGUtils;
 
 public class Image {
 	private final Bitmap bitmap;

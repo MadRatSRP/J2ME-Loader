@@ -53,11 +53,11 @@ import javax.microedition.util.ContextHolder;
 import io.reactivex.SingleObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
-import ru.playsoftware.j2meloader.config.Config;
-import ru.playsoftware.j2meloader.config.ProfileModel;
-import ru.playsoftware.j2meloader.config.ProfilesManager;
-import ru.playsoftware.j2meloader.config.ShaderInfo;
-import ru.playsoftware.j2meloader.util.FileUtils;
+import ru.playsoftware.j2meloaderexperimentalmod.config.Config;
+import ru.playsoftware.j2meloaderexperimentalmod.config.ProfileModel;
+import ru.playsoftware.j2meloaderexperimentalmod.config.ProfilesManager;
+import ru.playsoftware.j2meloaderexperimentalmod.config.ShaderInfo;
+import ru.playsoftware.j2meloaderexperimentalmod.util.FileUtils;
 
 import static android.os.Build.VERSION.SDK_INT;
 import static android.os.Build.VERSION_CODES.LOLLIPOP;

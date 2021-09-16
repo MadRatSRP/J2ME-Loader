@@ -28,7 +28,7 @@ import java.util.Arrays;
 
 import javax.microedition.util.ContextHolder;
 
-import ru.playsoftware.j2meloader.config.ProfileModel;
+import ru.playsoftware.j2meloaderexperimentalmod.config.ProfileModel;
 
 public class Font {
 	public static final int FACE_MONOSPACE = 32;

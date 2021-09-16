@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ru.playsoftware.j2meloader"
+    package="ru.playsoftware.j2meloaderexperimentalmod"
     android:installLocation="auto" >
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -19,7 +20,7 @@
     <uses-feature android:name="android.hardware.location" android:required="false" />
 
     <application
-        android:name=".EmulatorApplication"
+        android:name="ru.playsoftware.j2meloaderexperimentalmod.EmulatorApplication"
         android:allowBackup="false"
         android:appCategory="game"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +33,7 @@
         tools:targetApi="q"
         tools:ignore="RtlEnabled">
         <activity
-            android:name=".MainActivity"
+            android:name="ru.playsoftware.j2meloaderexperimentalmod.MainActivity"
             android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize"
             android:label="@string/app_name" >
             <intent-filter>
@@ -81,17 +82,17 @@
             android:process=":midlet"
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize" />
         <activity
-            android:name=".settings.SettingsActivity" >
+            android:name="ru.playsoftware.j2meloaderexperimentalmod.settings.SettingsActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
                 <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
         </activity>
-        <activity android:name=".donations.DonationsActivity" />
+        <activity android:name="ru.playsoftware.j2meloaderexperimentalmod.donations.DonationsActivity" />
         <activity
-            android:name=".filepicker.FilteredFilePickerActivity"
+            android:name="ru.playsoftware.j2meloaderexperimentalmod.filepicker.FilteredFilePickerActivity"
             android:theme="@style/FilePickerTheme" />
-        <activity android:name=".config.ProfilesActivity" />
+        <activity android:name="ru.playsoftware.j2meloaderexperimentalmod.config.ProfilesActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

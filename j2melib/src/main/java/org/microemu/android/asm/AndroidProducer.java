@@ -42,7 +42,7 @@ import java.util.HashMap;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-import ru.playsoftware.j2meloader.util.IOUtils;
+import ru.playsoftware.j2meloaderexperimentalmod.util.IOUtils;
 
 public class AndroidProducer {
     

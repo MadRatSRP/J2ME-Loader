@@ -40,8 +40,8 @@ import javax.microedition.lcdui.overlay.Overlay;
 import javax.microedition.shell.MicroActivity;
 import javax.microedition.util.ContextHolder;
 
-import ru.playsoftware.j2meloader.config.Config;
-import ru.playsoftware.j2meloader.config.ProfileModel;
+import ru.playsoftware.j2meloaderexperimentalmod.config.Config;
+import ru.playsoftware.j2meloaderexperimentalmod.config.ProfileModel;
 
 import static javax.microedition.lcdui.keyboard.KeyMapper.SE_KEY_SPECIAL_GAMING_A;
 import static javax.microedition.lcdui.keyboard.KeyMapper.SE_KEY_SPECIAL_GAMING_B;
